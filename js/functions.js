@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var menuIcon = document.getElementById('menu-icon');
-    var overlay = document.getElementById('overlay');
+    var overlay = document.getElementById('overlay-menu');
     var categoriesContainer = document.getElementById('categories-container');
 
     menuIcon.addEventListener('click', function() {

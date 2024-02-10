@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  #formulari * {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .formulari {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #555764;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 25px;
+  }
+  
+  
+  .section-content {
+    background: linear-gradient(
+    50deg,
+    rgba(40,42,55,1) 50%,
+    rgba(40,42,55,0.7)),
+    url(/images/DJI_0129.JPG);
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 90%;
+    border-radius: 25px;
+  }
+  
+  .map-content{
+    width: 90%;
+  }
+  
+  .form-content h2, .map-content h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  
+  label{
+    font-size: 17px;
+    color: #959aab;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea{
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #F4F6F9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  :focus{
+    outline: 1px solid #1E92E9;
+  }
+  
+  .btn{
+    background-color: #1E92E9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    background-color: #219BF9;
+  }
+  
+   
+  .section-content {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .section-content > div {
+    width: 50%;
+  }
+  
+  .column{
+    margin-top: 300px;
+  }
+  
+  
+  
+  @media(max-width:991px){
+    .formulari{
+      padding: 30px;
+    }
+  
+    .form-content{
+      width: 100%;
+    }
+    
+    form {
+      width: 100%;
+    }
+  
+    .section-content{
+      flex-direction: column;
+      padding-right: 20px;
+    }
+    .section-content > div {
+      width: 90%;
+    }
+    .form-content h2, .map-content h2 {
+      text-align: center;
+    }
+  }

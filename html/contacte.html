@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_contacte.css">
+    <script src="../js/functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="../images/logo-curt.png">
+    <title>La Bertolina - Allotjament Rural</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div id="menu-icon" class="menu-icon"><i class="fas fa-bars" onclick="mostraMenu()"></i></div>
+
+            <a href="../index.html">Inici</a>
+            <a href="./interior.html">Interior</a>
+            <a href="./exterior.html">Exterior</a>
+            <a href="./historia.html">Història</a>
+            <a href="../index.html" id="imatge-logo"> <img src="../images/logo2023.png"> </a>
+            <a href="./entorn.html">Entorn</a>
+            <a href="./tarifes.html">Tarifes</a>
+            <a href="./disponibilitat.html">Disponibilitat</a>
+            <a href="./contacte.html">Contacte</a>
+        </div>
+
+        <!-- Añade un contenedor para las categorías y un fondo oscuro -->
+        <div id="categories-container" class="categories-container">
+            <a href="../index.html">Inici</a>
+            <a href="./interior.html">Interior</a>
+            <a href="./exterior.html">Exterior</a>
+            <a href="./historia.html">Història</a>
+            <a href="./entorn.html">Entorn</a>
+            <a href="./tarifes.html">Tarifes</a>
+            <a href="./disponibilitat.html">Disponibilitat</a>
+            <a href="./contacte.html">Contacte</a>
+        </div>
+
+        <div id="overlay-menu" class="overlay-menu"></div>
+    </header>
+
+    <main>
+        <section class="formulari">
+            <div class="section-content">
+                <div class="form-content">
+                    <h2>Formulari</h2>
+                    <!-- <form action="https://formsubmit.co/oriolf2003@gmail.com" method="POST"> -->
+                    <form action="../enviar.php" method="POST">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+
+                        <label for="email">Correu electronic</label>
+                        <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+
+                        <label for="subject">Telefon</label>
+                        <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
+
+                        <label for="coments">Comentaris</label>
+                        <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
+
+                        <!-- <input class="btn" type="submit" value="Enviar"> -->
+                        <button type="submit" class="btn btn-primary">ENVIAR </button>
+                        <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/"> -->
+                        <!-- <input type="hidden" name="_next" value="/img/contacte.html"> -->
+
+                        <!-- <input type="hidden" name="_captcha" value="false"> -->
+                    </form>
+                </div>
+
+                <div class="map-content">
+                    <h2>Mapa</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.7240022031649!2d1.6572408772591831!3d42.09945980052803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5badd90ad7755%3A0x435e3bd3dad11459!2sLa%20Bertolina!5e1!3m2!1ses!2ses!4v1695468221361!5m2!1ses!2ses"
+                        width="100%" height="85%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" view="satellite"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="footerNav">
+            <a href="./index.html">Inici</a>
+            <a href="./html/tarifes.html">Tarifes</a>
+            <a href="./html/disponibilitat.html">Disponibilitat</a>
+            <a href="./html/contacte.html">Contacte</a>
+        </div>
+
+        <div class="footerTelefon">
+            <p>Casa Bertolina - Busa - Navés - Lleida - 25286</p>
+            <p>Mòbil: 661 66 89 60</p>
+            <p>info@labertolina.com</p>
+        </div>
+
+        <div class="footerBottom">
+            <p> CopyRight &copy; 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

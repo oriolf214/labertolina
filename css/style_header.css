@@ -79,7 +79,7 @@ body {
         background-color: green;
     }
 
-    .overlay {
+    .overlay-menu {
         display: none;
         position: fixed;
         top: 0;
@@ -90,7 +90,7 @@ body {
         z-index: 998;
     }
 
-    .overlay.active {
+    .overlay-menu.active {
         display: block;
     }
 }
