@@ -2,233 +2,233 @@
 <html lang="cat">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="/css/style_header.css">
-    <link rel="stylesheet" href="/css/style_casa.css">
-    <script src="/js/functions.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/style_header.css">
+  <link rel="stylesheet" href="./css/style_casa.css">
+  <script src="./js/functions.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-    <link rel="icon" href="/images/logo-curt.png">
-    <title>La Bertolina - Allotjament Rural</title>
+  <link rel="icon" href="../images/logo-curt.png">
+  <title>La Bertolina - Allotjament Rural</title>
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <header>
+  <header>
 
-        <div class="header">
-            <div id="menu-icon" class="menu-icon"><i class="fas fa-bars" onclick="mostraMenu()"></i></div>
+    <div class="header">
+      <div id="menu-icon" class="menu-icon"><i class="fas fa-bars" onclick="mostraMenu()"></i></div>
 
-            <a href="/index.html">Inici</a>
-            <a href="/html/interior.html">Interior</a>
-            <a href="/html/exterior.html">Exterior</a>
-            <a href="/html/historia.html">Història</a>
-            <a href="/index.html" id="imatge-logo"> <img src="/images/logo2023.png"> </a>
-            <a href="/html/entorn.html">Entorn</a>
-            <a href="/html/tarifes.html">Tarifes</a>
-            <a href="/html/disponibilitat.html">Disponibilitat</a>
-            <a href="/html/contacte.html">Contacte</a>
+      <a href="./index.html">Inici</a>
+      <a href="./html/interior.html">Interior</a>
+      <a href="./html/exterior.html">Exterior</a>
+      <a href="./html/historia.html">Història</a>
+      <a href="./index.html" id="imatge-logo"> <img src="../images/logo2023.png"> </a>
+      <a href="./html/entorn.html">Entorn</a>
+      <a href="./html/tarifes.html">Tarifes</a>
+      <a href="./html/disponibilitat.html">Disponibilitat</a>
+      <a href="./html/contacte.html">Contacte</a>
+    </div>
+
+    <!-- Añade un contenedor para las categorías y un fondo oscuro -->
+    <div id="categories-container" class="categories-container">
+      <a href="./index.html">Inici</a>
+      <a href="./html/interior.html">Interior</a>
+      <a href="./html/exterior.html">Exterior</a>
+      <a href="./html/historia.html">Història</a>
+      <a href="./html/entorn.html">Entorn</a>
+      <a href="./html/tarifes.html">Tarifes</a>
+      <a href="./html/disponibilitat.html">Disponibilitat</a>
+      <a href="./html/contacte.html">Contacte</a>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+  </header>
+
+  <main>
+    <!-- Video presentacio de la casa -->
+    <section class="video-section">
+      <div class="video-container">
+        <video src="../images/interior/interior_baix.mp4" autoplay loop muted></video>
+      </div>
+    </section>
+
+    <!-- Sección de Distribució de la Casa -->
+    <section class="main-section">
+      <div class="section-content">
+        <div class="column-container">
+          <div class="column">
+            <p style="font-size: 23px;"><b>Capacitat de 13 persones amb un total de 193m2 </b><br> </p>
+            <p>5 habitacions, 3 triples i 2 dobles.</p>
+            <p style="font-size: 18px;"> <b> La casa esta equipada amb: </b></p>
+            <ul>
+              <li>Cuina completa</li>
+              <li>4 banys amb assecador</li>
+              <li>Sala d'estar amb llar de foc</li>
+              <li>Menjador</li>
+              <li>Rentavaixelles</li>
+              <li>Rentadora</li>
+              <li>Calefacció central</li>
+              <li>Wi-Fi</li>
+            </ul>
+          </div>
+
+          <div class="column image-column">
+            <img src="./images/plano_sin_fondo.png" alt="Imagen">
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Añade un contenedor para las categorías y un fondo oscuro -->
-        <div id="categories-container" class="categories-container">
-            <a href="/index.html">Inici</a>
-            <a href="/html/interior.html">Interior</a>
-            <a href="/html/exterior.html">Exterior</a>
-            <a href="/html/historia.html">Història</a>
-            <a href="/html/entorn.html">Entorn</a>
-            <a href="/html/tarifes.html">Tarifes</a>
-            <a href="/html/disponibilitat.html">Disponibilitat</a>
-            <a href="/html/contacte.html">Contacte</a>
-        </div>
 
-        <div id="overlay" class="overlay"></div>
-    </header>
+    <!-- Mapa 3d Casa -->
+    <section class="map-section">
+      <h2>TOUR VIRTUAL</h2>
+      <div class="matterport-map">
+        <iframe src="https://my.matterport.com/show/?m=mNLjykomqKR" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
 
-    <main>
-        <!-- Video presentacio de la casa -->
-        <section class="video-section">
-            <div class="video-container">
-                <video src="/images/interior/interior_baix.mp4" autoplay loop muted></video>
+    <!-- Galeria dimagenes -->
+    <section id="galeria-imagenes" class="galeria-imagenes">
+      <div class="galeria">
+        <h1>Galeria d'Imatges</h1>
+        <div class="linea"></div>
+        <div class="contenedor-imagenes">
+          <div class="imagen">
+            <img src="./images/interior/imatge1.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Habitacio 1</h2>
             </div>
-        </section>
-
-        <!-- Sección de Distribució de la Casa -->
-        <section class="main-section">
-            <div class="section-content">
-                <div class="column-container">
-                    <div class="column">
-                        <p style="font-size: 23px;"><b>Capacitat de 13 persones amb un total de 193m2 </b><br> </p>
-                        <p>5 habitacions, 3 triples i 2 dobles.</p>
-                        <p style="font-size: 18px;"> <b> La casa esta equipada amb: </b></p>
-                        <ul>
-                            <li>Cuina completa</li>
-                            <li>4 banys amb assecador</li>
-                            <li>Sala d'estar amb llar de foc</li>
-                            <li>Menjador</li>
-                            <li>Rentavaixelles</li>
-                            <li>Rentadora</li>
-                            <li>Calefacció central</li>
-                            <li>Wi-Fi</li>
-                        </ul>
-                    </div>
-
-                    <div class="column image-column">
-                        <img src="/images/plano_sin_fondo.png" alt="Imagen">
-                    </div>
-                </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge2.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Habitacio 2</h2>
             </div>
-        </section>
-
-
-        <!-- Mapa 3d Casa -->
-        <section class="map-section">
-            <h2>TOUR VIRTUAL</h2>
-            <div class="matterport-map">
-              <iframe src="https://my.matterport.com/show/?m=mNLjykomqKR" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge3.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Habitacio 3</h2>
             </div>
-        </section>
-
-        <!-- Galeria dimagenes -->
-        <section id="galeria-imagenes" class="galeria-imagenes">
-            <div class="galeria">
-                <h1>Galeria d'Imatges</h1>
-                <div class="linea"></div>
-                <div class="contenedor-imagenes">
-                  <div class="imagen">
-                    <img src="/images/interior/imatge1.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Habitacio 1</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge2.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Habitacio 2</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge3.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Habitacio 3</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge4.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Sala d'estar</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge5.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Menjador</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge6.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Cuina</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge7.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Habitacio 4</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge8.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Habitació 5</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge9.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Habitació 6</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge10.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Bany 1</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge11.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Rebedor</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge12.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Bany 2</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge13.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Habitacio 7</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge14.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Menjador</h2>
-                    </div>
-                  </div>
-                  <div class="imagen">
-                    <img src="/images/interior/imatge15.jpg" alt="" data-titulo="1234">
-                    <div class="overlay">
-                      <h2>Menjador</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-            <!-- Modal para mostrar la imagen ampliada -->
-            <div class="modal" id="modal">
-              <span class="cerrar" id="cerrar">&times;</span>
-              <a class="navegacion anterior" id="anterior">&#10094;</a>
-              <a class="navegacion siguiente" id="siguiente">&#10095;</a>
-              <img class="imagen-modal" id="imagen-modal" src="" alt="">
-              <div class="titulo-modal" id="titulo-modal"></div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge4.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Sala d'estar</h2>
             </div>
-        </section>
-          
-
-
-    </main>
-
-
-    <footer>
-        <div class="footerNav">
-            <a href="/index.html">Inici</a>
-            <a href="">Tarifes</a>
-            <a href="">Disponibilitat</a>
-            <a href="">Contacte</a>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge5.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Menjador</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge6.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Cuina</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge7.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Habitacio 4</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge8.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Habitació 5</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge9.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Habitació 6</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge10.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Bany 1</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge11.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Rebedor</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge12.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Bany 2</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge13.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Habitacio 7</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge14.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Menjador</h2>
+            </div>
+          </div>
+          <div class="imagen">
+            <img src="./images/interior/imatge15.jpg" alt="" data-titulo="1234">
+            <div class="overlay">
+              <h2>Menjador</h2>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footerTelefon">
-            <p>Casa Bertolina - Busa - Navés - Lleida - 25286</p>
-            <p>Mòbil: 661 66 89 60</p>
-            <p>info@labertolina.com</p>
-        </div>
+      <!-- Modal para mostrar la imagen ampliada -->
+      <div class="modal" id="modal">
+        <span class="cerrar" id="cerrar">&times;</span>
+        <a class="navegacion anterior" id="anterior">&#10094;</a>
+        <a class="navegacion siguiente" id="siguiente">&#10095;</a>
+        <img class="imagen-modal" id="imagen-modal" src="" alt="">
+        <div class="titulo-modal" id="titulo-modal"></div>
+      </div>
+    </section>
 
-        <div class="footerBottom">
-            <p> CopyRight &copy; 2024</p>
-        </div>
-    </footer>
+
+
+  </main>
+
+
+  <footer>
+    <div class="footerNav">
+      <a href="./index.html">Inici</a>
+      <a href="">Tarifes</a>
+      <a href="">Disponibilitat</a>
+      <a href="">Contacte</a>
+    </div>
+
+    <div class="footerTelefon">
+      <p>Casa Bertolina - Busa - Navés - Lleida - 25286</p>
+      <p>Mòbil: 661 66 89 60</p>
+      <p>info@labertolina.com</p>
+    </div>
+
+    <div class="footerBottom">
+      <p> CopyRight &copy; 2024</p>
+    </div>
+  </footer>
 
 </body>
 
