@@ -30,12 +30,8 @@ body {
     display: none;
 }
 
-@media (max-width: 1165) {
-    
-}
-
 /*Començem amb el menu responsive*/
-@media (max-width: 1000) {
+@media (max-width: 1000px) {
     #menu-icon {
         display: block;
         /* Asegura que el icono del menú sea visible */
