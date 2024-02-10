@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./css/style_header.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <script src="./js/functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="./images/logo-curt.png">
+    <title>La Bertolina - Allotjament Rural</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+
+        <div class="header">
+            <div id="menu-icon" class="menu-icon"><i class="fas fa-bars" onclick="mostraMenu()"></i></div>
+
+            <a href="./index.html">Inici</a>
+            <a href="./html/interior.html">Interior</a>
+            <a href="./html/exterior.html">Exterior</a>
+            <a href="">Història</a>
+            <a href="./index.html" id="imatge-logo"> <img src="./images/logo2023.png"> </a>
+            <a href="">Entorn</a>
+            <a href="">Tarifes</a>
+            <a href="">Disponibilitat</a>
+            <a href="">Contacte</a>
+        </div>
+
+        <!-- Añade un contenedor para las categorías y un fondo oscuro -->
+        <div id="categories-container" class="categories-container">
+            <a href="/index.html">Inici  </a>
+            <a href="/html/exterior.html">Interior</a>
+            <a href="">Exterior</a>
+            <a href="">Història</a>
+            <a href="">Entorn</a>
+            <a href="">Tarifes</a>
+            <a href="">Disponibilitat</a>
+            <a href="">Contacte</a>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+    </header>
+
+    <main>
+        <!-- Video presentacio de la casa -->
+        <section class="video-section">
+            <div class="video-container">
+                <video src="./images/resum2-baix.mp4" autoplay loop muted></video>
+            </div>
+        </section>
+
+        <!-- Presentacio foto + escrit -->
+        <section class="presentation-section">
+            <div class="presentation-content">
+                <img src="./images/slideshow001-2.jpg" alt="Presentación de la Casa Rural">
+                <div class="presentation-text">
+                    <h2 class="titul">"L' essencial es viu amb senzillesa"
+                    </h2>
+                    <hr>
+                    <p>
+                        La Bertolina és un allotjament rural completament rehabilitat que respecta l’antiga edificació
+                        segons
+                        escrits que daten del segle X. Situada al nord del Solsonès, enmig d’un paisatge idíl·lic que
+                        convida
+                        a gaudir de la tranquil·litat i de la natura.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Slider de fotos de la casa-->
+        <section class="carousel">
+            <div class="mida">
+                <div class="slider" id="slider">
+                    <img src="./images/DJI_0124.JPG" alt="Image 1">
+                    <img src="./images/DJI_0129.JPG" alt="Image 2">
+                    <img src="./images/DJI_0144.JPG" alt="Image 3">
+                    <img src="./images/DJI_0124.JPG" alt="Image 1">
+                    <img src="./images/DJI_0129.JPG" alt="Image 2">
+                    <img src="./images/DJI_0144.JPG" alt="Image 3">
+                    <img src="./images/DJI_0124.JPG" alt="Image 1">
+                    <img src="./images/DJI_0129.JPG" alt="Image 2">
+                    <img src="./images/DJI_0144.JPG" alt="Image 3">
+                </div>
+            </div>
+            <button class="btn-left">&lt;</button>
+            <button class="btn-right">&gt;</button>
+        </section>
+
+
+        <!-- Tour 3d de la casa-->
+        <section class="map-section">
+            <div class="matterport-map">
+                <iframe src="https://my.matterport.com/show/?m=mNLjykomqKR" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footerNav">
+            <a href="./index.html">Inici</a>
+            <a href="">Tarifes</a>
+            <a href="">Disponibilitat</a>
+            <a href="">Contacte</a>
+        </div>
+
+        <div class="footerTelefon">
+            <p>Casa Bertolina - Busa - Navés - Lleida - 25286</p>
+            <p>Mòbil: 661 66 89 60</p>
+            <p>info@labertolina.com</p>
+        </div>
+
+        <div class="footerBottom">
+            <p> CopyRight &copy; 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

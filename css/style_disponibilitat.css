@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.map-section {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.map-section iframe {
+    margin-bottom: 2rem;
+    height: 80vh;
+    width: 100%;
+
+}

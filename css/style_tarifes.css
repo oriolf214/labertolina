@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.titolytexto {
+    padding: 50px 10%;
+}
+
+.titolytexto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-top: 50spx;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Estilos para la sección de precios */
+.preus {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+
+
+/* Estilos para las columnas de la tabla */
+.preus .tabla {
+    display: flex;
+}
+
+.preus {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.preus .columna {
+    flex: 1;
+    border: 1px solid #343759;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0px #343759;
+    border-radius: 3%;
+}
+
+.columna:hover{
+    background: #343759;
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+    
+}
+
+/* Estilos para el enlace "Contacte" */
+.preus .columna a {
+    display: inline-block;
+    background-color: green;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para los botones "Contacte" */
+.preus .tabla a {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 680px) {
+  .tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .columna {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: auto; /* Centra la columna horizontalmente */
+    margin-right: auto; /* Centra la columna horizontalmente */
+  }
+}
+
+  

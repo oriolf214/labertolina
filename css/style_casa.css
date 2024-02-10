@@ -1,0 +1,341 @@
+/*****      ESTILS PAGINA INTERIOR     ********/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    }
+
+/*Video */
+.video-section, .video-container video {
+    width: 100%;
+    height: 92vh;
+    object-fit: cover;
+}
+
+/*Estils Planol Interior casa*/
+.section-content {
+    max-width: 87%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.section-content h2 {
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 50%;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 25px;
+    padding-bottom: 0px;
+}
+
+.column ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.image-column {
+    flex-basis: 50%;
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+    }
+}
+
+
+/*Mapa 3d casa a interior*/
+.map-section {
+    background: grey;
+    text-align: center;
+    padding: 50px 20px;
+    height: 85vh;
+}
+
+.map-section h2 {
+    color: #f8f8f8;
+    padding-bottom: 10px;
+}
+
+.matterport-map {
+    padding-bottom: 20px;
+}
+
+.matterport-map iframe {
+    width: 90%;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+/*Galeria imagenes amb responsive i texto*/
+#galeria-imagenes * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#galeria-imagenes .galeria {
+    font-family: 'open sans';
+    padding-bottom: 100px;
+}
+
+
+#galeria-imagenes .galeria h1 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    /*text-decoration: underline  red;*/
+
+}
+
+#galeria-imagenes .linea {
+    border-top: 5px solid rgb(51, 51, 51);
+    margin-bottom: 40px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#galeria-imagenes .contenedor-imagenes {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#galeria-imagenes .contenedor-imagenes .imagen {
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+
+#galeria-imagenes .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(24, 28, 31, 0.781);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay {
+    height: 15%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contenedor-imagenes {
+        width: 90%;
+    }
+
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .contenedor-imagenes {
+        flex-direction: column;
+    }
+
+    .contenedor-imagenes .imagen {
+        width: 80%;
+    }
+
+    #galeria-imagenes .imagen img {
+        width: auto;
+    }
+}
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Agregar overflow: auto */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Estilos para la imagen ampliada dentro del modal */
+.imagen-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 80%;
+    transition: transform 0.5s;
+    transform-origin: center center;
+}
+.imagen-modal:hover {
+    cursor: zoom-in;
+}
+
+.imagen-modal.zoomed {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Estilos para los botones de navegación */
+.navegacion {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navegacion.anterior {
+    left: 20%;
+}
+
+.navegacion.siguiente {
+    right: 20%;
+}
+
+.navegacion:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para el título en el modal */
+.titulo-modal {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+/***** ESTILS  PART EXTERIOR CASA ******/
+.text-inici{
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .text-inici h2{
+    padding-bottom: 30px;
+  }
+  
+  .text-inici p{
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+
+
+  /***** ESTILS ENTORN CASA ******/
+  .presentation-section {
+    background-color: #f8f8f8;
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .presentation-content {
+    display:block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .presentation-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-top: 50spx;
+    text-align: center;
+  }
+
+  .presentation-text p {
+    font-size: 18px;
+  }
+  
+  .llista{
+    padding-top: 20px;
+    padding-left: 20px;
+    line-height: 40px;
+  }
