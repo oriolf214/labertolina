@@ -25,46 +25,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Slider presentacion fotos
 document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.getElementById('slider');
-    const slides = slider.querySelectorAll('img');
-    const totalSlides = slides.length;
-    const btnLeft = document.querySelector('.btn-left');
-    const btnRight = document.querySelector('.btn-right');
-    let currentIndex = 0;
-  
-    // Agregar eventos a los botones de navegación
-    btnLeft.addEventListener('click', () => moveToSlide(currentIndex - 1));
-    btnRight.addEventListener('click', () => moveToSlide(currentIndex + 1));
-  
-    // Función para mover el slider a un índice específico
-    function moveToSlide(index) {
+  const slider = document.getElementById('slider');
+  const slides = slider.querySelectorAll('img');
+  const totalSlides = slides.length;
+  const btnLeft = document.querySelector('.btn-left');
+  const btnRight = document.querySelector('.btn-right');
+  let currentIndex = 0;
+  let intervalId; // Definimos el intervalId fuera del setInterval para poder manipularlo
+
+  // Agregar eventos a los botones de navegación
+  btnLeft.addEventListener('click', () => {
+      moveToSlide(currentIndex - 1);
+      restartInterval();
+  });
+  btnRight.addEventListener('click', () => {
+      moveToSlide(currentIndex + 1);
+      restartInterval();
+  });
+
+  // Función para mover el slider a un índice específico
+  function moveToSlide(index) {
       if (index < 0) {
-        index = totalSlides - 1; // Ir al último slide si estamos en el primer slide
+          index = totalSlides - 1; // Ir al último slide si estamos en el primer slide
       } else if (index >= totalSlides) {
-        index = 0; // Ir al primer slide si estamos en el último slide
+          index = 0; // Ir al primer slide si estamos en el último slide
       }
-  
+
       const offset = -index * 100; // Calcular el desplazamiento
       slider.style.transform = `translateX(${offset}%)`; // Aplicar el desplazamiento
       currentIndex = index; // Actualizar el índice actual
-    }
-  
-    // Función para mover el slider hacia la derecha automáticamente cada 3 segundos
-    function autoSlide() {
+  }
+
+  // Función para reiniciar el intervalo de tiempo
+  function restartInterval() {
+      clearInterval(intervalId); // Limpiamos el intervalo actual
+      intervalId = setInterval(autoSlide, 3000); // Reiniciamos el intervalo con 1 segundo
+  }
+
+  // Función para mover el slider hacia la derecha automáticamente cada 1 segundo
+  function autoSlide() {
       moveToSlide(currentIndex + 1); // Mover al siguiente slide
-    }
-  
-    // Iniciar el intervalo para el movimiento automático del slider
-    let intervalId = setInterval(autoSlide, 1000);
-  
-    // Detener el movimiento automático cuando el mouse pasa sobre el slider
-    slider.addEventListener('mouseenter', () => clearInterval(intervalId));
-  
-    // Reanudar el movimiento automático cuando el mouse sale del slider
-    slider.addEventListener('mouseleave', () => {
-      intervalId = setInterval(autoSlide, 3000);
-    });
-  });
+  }
+
+  // Iniciar el intervalo para el movimiento automático del slider
+  intervalId = setInterval(autoSlide, 3000);
+
+});
+
+
 
   
   //Funcions galeria 
