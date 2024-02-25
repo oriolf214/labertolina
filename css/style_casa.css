@@ -49,6 +49,7 @@ body {
 }
 
 .image-column img {
+    padding-top: 10%;
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -59,6 +60,9 @@ body {
     .column {
         flex-basis: 100%;
     }
+    .image-column img {
+        padding-top: 0%;
+    }
 }
 
 
@@ -68,6 +72,7 @@ body {
     text-align: center;
     padding: 50px 20px;
     height: 85vh;
+    padding-top: 10px;
 }
 
 .map-section h2 {
@@ -94,7 +99,7 @@ body {
 
 #galeria-imagenes .galeria {
     font-family: 'open sans';
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -132,6 +137,12 @@ body {
     margin-bottom: 5px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
 }
+
+#galeria-imagenes .contenedor-imagenes,
+#galeria-imagenes .contenedor-imagenes .imagen {
+    box-sizing: border-box;
+}
+
 
 #galeria-imagenes .imagen img {
     width: 100%;
@@ -174,30 +185,19 @@ body {
 }
 
 @media screen and (max-width:700px) {
-    .contenedor-imagenes {
-        width: 90%;
-    }
-
     .contenedor-imagenes .imagen {
         width: 48%;
     }
 }
 
 @media screen and (max-width:450px) {
-    h1 {
-        font-size: 22px;
+    #galeria-imagenes .contenedor-imagenes {
+        width: 100%;
+        margin: 0;
     }
 
-    .contenedor-imagenes {
-        flex-direction: column;
-    }
-
-    .contenedor-imagenes .imagen {
+    #galeria-imagenes .contenedor-imagenes .imagen {
         width: 80%;
-    }
-
-    #galeria-imagenes .imagen img {
-        width: auto;
     }
 }
 
@@ -304,6 +304,7 @@ body {
   .text-inici p{
     font-size: 18px;
     line-height: 1.6;
+    text-align: justify;
   }
 
 
