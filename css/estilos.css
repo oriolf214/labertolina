@@ -8,17 +8,19 @@
 
 /*Text Presentacio Casa*/
 .presentation-section {
-    height: 50vh;
+    /*height: 50vh;*/
     background-color: #f8f8f8;
-    padding: 25px 20px;
+    padding: 50px 20px;
     display: flex;
     align-items: center;
 }
 
 .presentation-content {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: justify;
 }
 
 .presentation-content img {
@@ -33,11 +35,23 @@
     text-align: center;
 }
 
+@media (max-width: 1000px) {
+    .presentation-content{
+        flex-direction: column;
+    }
+    .presentation-content img{
+        max-width: 90%;
+        margin-right: 0px;
+    }
+}
+
 /*Galeria imatges responsive carruseles*/
 .carousel {
     position: relative;
     overflow: hidden;
     background: linear-gradient(to right, #859398, #333);
+    height: 100%; /* Agregado */
+
 }
 
 .slider {
@@ -45,11 +59,13 @@
     transition: transform 0.5s ease;
     width: 70%;
     margin-left: 15%;
+    
 }
 
 .slider img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .btn-left,
@@ -83,6 +99,17 @@
     right: 10%;
 }
 
+@media (max-width: 1000px) {
+    .slider {
+        height: 75vh;
+        width: 100%;
+        margin-left: 0%;
+    }    
+    .btn-left,
+    .btn-right {
+        display: none;
+    }
+}
 
 /*Estils pel mapa 3d*/
 .map-section {

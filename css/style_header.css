@@ -12,6 +12,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
     padding: 0 10%;
+    overflow-x: auto; /* Agregado */
+
 }
 
 .header a {
@@ -30,18 +32,18 @@ body {
     display: none;
 }
 
+
 /*Començem amb el menu responsive*/
 @media (max-width: 1000px) {
     #menu-icon {
         display: block;
-        /* Asegura que el icono del menú sea visible */
     }
 
     .header {
         justify-content: center;
-        /* Centra los elementos horizontalmente */
         text-align: center;
-        /* Centra el texto dentro del contenedor */
+        width: 100%;
+        padding: 0;
     }
 
     .header a:not(#imatge-logo) {
