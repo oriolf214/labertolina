@@ -7,12 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <link rel="stylesheet" href="../css/style_header.css">
-  
-  <link rel="stylesheet" href="../css/estilos.css">
+
+  <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
   <link rel="stylesheet" href="../css/style_casa.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <script src="../js/functions.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <link rel="icon" href="../images/logo-curt.png">
   <title>La Bertolina - Allotjament Rural</title>
@@ -43,7 +45,7 @@
 
     <!-- Añade un contenedor para las categorías y un fondo oscuro -->
     <div id="categories-container" class="categories-container">
-     <a href="../index.html">Inici</a>
+      <a href="../index.html">Inici</a>
       <a href="./interior.html">Interior</a>
       <a href="./exterior.html">Exterior</a>
       <a href="./historia.html">Història</a>
@@ -101,113 +103,105 @@
     </section>
 
     <!-- Galeria dimagenes -->
-    <section id="galeria-imagenes" class="galeria-imagenes">
-      <div class="galeria">
-        <h1>Galeria d'Imatges</h1>
-        <div class="linea"></div>
-        <div class="contenedor-imagenes">
-          <div class="imagen">
-            <img src="../images/interior/imatge1.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Habitacio 1</h2>
-            </div>
+    <div class="galery">
+      <h1 style="text-align: center;">Galeria d'Imatges</h1>
+      <div id="linea"></div>
+
+
+      <!-- Miniaturas -->
+      <div class="galeria-miniaturas">
+        <img src="../images/DJI_0124.JPG" alt="">
+        <img src="../images/DJI_0144.JPG" alt="">
+        <img src="../images/DJI_0177.JPG" alt="">
+        <img src="../images/DJI_0124.JPG" alt="">
+        <img src="../images/DJI_0144.JPG" alt="">
+        <img src="../images/DJI_0177.JPG" alt="">
+        <img src="../images/DJI_0124.JPG" alt="">
+        <img src="../images/DJI_0144.JPG" alt="">
+        <img src="../images/DJI_0177.JPG" alt="">
+        <img src="../images/DJI_0124.JPG" alt="">
+        <img src="../images/DJI_0144.JPG" alt="">
+        <img src="../images/DJI_0177.JPG" alt="">
+        <img src="../images/DJI_0124.JPG" alt="">
+        <img src="../images/DJI_0144.JPG" alt="">
+        <img src="../images/DJI_0177.JPG" alt="">
+      </div>
+
+      <!-- Imagen en grande -->
+      <div class="imagen-grande">
+        <span class="cerrado">&times;</span>
+        <div class="swiper-container swiper-container-imagen-grande">
+          <div class="swiper-wrapper">
+            <!-- Las imágenes se añadirán aquí dinámicamente -->
           </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge2.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Habitacio 2</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge3.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Habitacio 3</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge4.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Sala d'estar</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge5.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Menjador</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge6.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Cuina</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge7.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Habitacio 4</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge8.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Habitació 5</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge9.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Habitació 6</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge10.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Bany 1</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge11.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Rebedor</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge12.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Bany 2</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge13.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Habitacio 7</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge14.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Menjador</h2>
-            </div>
-          </div>
-          <div class="imagen">
-            <img src="../images/interior/imatge15.jpg" alt="" data-titulo="1234">
-            <div class="overlay">
-              <h2>Menjador</h2>
-            </div>
-          </div>
+          <div class="swiper-button-prev" id="prev"></div>
+          <div class="swiper-button-next" id="next"></div>
         </div>
       </div>
 
-      <!-- Modal para mostrar la imagen ampliada -->
-      <div class="modal" id="modal">
-        <span class="cerrar" id="cerrar">&times;</span>
-        <a class="navegacion anterior" id="anterior">&#10094;</a>
-        <a class="navegacion siguiente" id="siguiente">&#10095;</a>
-        <img class="imagen-modal" id="imagen-modal" src="" alt="">
-        <div class="titulo-modal" id="titulo-modal"></div>
-      </div>
-    </section>
+
+      <script>
+        // Crear el contenedor del Swiper para la vista en grande
+        var swiperImagenGrande = new Swiper('.swiper-container-imagen-grande', {
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }
+        });
+
+        // Guardar el estado del zoom
+        var zoomActivo = false;
+
+        // Evento para mostrar la imagen en grande al hacer clic en una miniatura
+        document.querySelectorAll('.galeria-miniaturas img').forEach((img, index) => {
+          img.addEventListener('click', function () {
+            document.querySelector('.imagen-grande').style.display = 'flex';
+
+            // Eliminar todas las diapositivas clonadas antes de agregar nuevas
+            swiperImagenGrande.removeAllSlides();
+
+            // Agregar las imágenes a la vista en grande
+            document.querySelectorAll('.galeria-miniaturas img').forEach((img, idx) => {
+              const clone = img.cloneNode(true);
+              const slide = document.createElement('div');
+              slide.classList.add('swiper-slide', 'swiper-slide-imagen-grande');
+              slide.appendChild(clone);
+              swiperImagenGrande.appendSlide(slide);
+
+              // Establecer la diapositiva inicial si coincide con la imagen clicada
+              if (idx === index) {
+                swiperImagenGrande.slideTo(swiperImagenGrande.slides.length - 1, 0);
+              }
+
+              // Agregar el evento de clic para hacer zoom in/out en la imagen
+              clone.addEventListener('click', function () {
+                if (!zoomActivo) {
+                  clone.style.transformOrigin = '50% 50%'; // Establecer el punto de origen de la transformación
+                  clone.style.transform = 'scale(2)';
+                  zoomActivo = true;
+                  swiperImagenGrande.allowSlideNext = false;
+                  swiperImagenGrande.allowSlidePrev = false;
+                } else {
+                  clone.style.transformOrigin = '50% 50%'; // Establecer el punto de origen de la transformación
+                  clone.style.transform = 'scale(1)';
+                  zoomActivo = false;
+                  swiperImagenGrande.allowSlideNext = true;
+                  swiperImagenGrande.allowSlidePrev = true;
+                }
+              });
+
+            });
+          });
+        });
+
+        // Evento para cerrar la imagen en grande al hacer clic en el botón de cerrar
+        document.querySelector('.cerrado').addEventListener('click', function () {
+          document.querySelector('.imagen-grande').style.display = 'none';
+          swiperImagenGrande.removeAllSlides(); // Eliminar todas las diapositivas clonadas al cerrar la vista en grande
+        });
+      </script>
+    </div>
 
 
 
@@ -220,7 +214,7 @@
       <a href="./tarifes.html">Tarifes</a>
       <a href="./disponibilitat.html">Disponibilitat</a>
       <a href="./contacte.html">Contacte</a>
-  </div>
+    </div>
 
     <div class="footerTelefon">
       <p>Casa Bertolina - Busa - Navés - Lleida - 25286</p>

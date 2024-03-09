@@ -42,9 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-
-
   
   //Funcions galeria 
   document.addEventListener('DOMContentLoaded', function () {
@@ -120,4 +117,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//swiper
+///Galeria imatges nova
