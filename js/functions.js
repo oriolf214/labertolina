@@ -22,55 +22,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-//Slider presentacion fotos
+//Swiper index
 document.addEventListener('DOMContentLoaded', function() {
-  const slider = document.getElementById('slider');
-  const slides = slider.querySelectorAll('img');
-  const totalSlides = slides.length;
-  const btnLeft = document.querySelector('.btn-left');
-  const btnRight = document.querySelector('.btn-right');
-  let currentIndex = 0;
-  let intervalId; // Definimos el intervalId fuera del setInterval para poder manipularlo
-
-  // Agregar eventos a los botones de navegación
-  btnLeft.addEventListener('click', () => {
-      moveToSlide(currentIndex - 1);
-      restartInterval();
+  const swiper = new Swiper(".swiper-hero", {
+      direction: "horizontal",
+      loop: true,
+      autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
   });
-  btnRight.addEventListener('click', () => {
-      moveToSlide(currentIndex + 1);
-      restartInterval();
-  });
-
-  // Función para mover el slider a un índice específico
-  function moveToSlide(index) {
-      if (index < 0) {
-          index = totalSlides - 1; // Ir al último slide si estamos en el primer slide
-      } else if (index >= totalSlides) {
-          index = 0; // Ir al primer slide si estamos en el último slide
-      }
-
-      const offset = -index * 100; // Calcular el desplazamiento
-      slider.style.transform = `translateX(${offset}%)`; // Aplicar el desplazamiento
-      currentIndex = index; // Actualizar el índice actual
-  }
-
-  // Función para reiniciar el intervalo de tiempo
-  function restartInterval() {
-      clearInterval(intervalId); // Limpiamos el intervalo actual
-      intervalId = setInterval(autoSlide, 3000); // Reiniciamos el intervalo con 1 segundo
-  }
-
-  // Función para mover el slider hacia la derecha automáticamente cada 1 segundo
-  function autoSlide() {
-      moveToSlide(currentIndex + 1); // Mover al siguiente slide
-  }
-
-  // Iniciar el intervalo para el movimiento automático del slider
-  intervalId = setInterval(autoSlide, 3000);
-
 });
+
 
 
 
@@ -145,3 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
       imagenModal.classList.toggle('zoomed');
     });
 });
+
+
+
+
+//swiper

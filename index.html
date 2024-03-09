@@ -11,6 +11,9 @@
 
     <script src="./js/functions.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
 
     <link rel="icon" href="./images/logo-curt.png">
     <title>La Bertolina - Allotjament Rural</title>
@@ -19,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
@@ -40,7 +44,7 @@
 
         <!-- Añade un contenedor para las categorías y un fondo oscuro -->
         <div id="categories-container" class="categories-container">
-            <a href="/index.html">Inici  </a>
+            <a href="/index.html">Inici </a>
             <a href="./html/interior.html">Interior</a>
             <a href="./html/exterior.html">Exterior</a>
             <a href="./html/historia.html">Història</a>
@@ -82,24 +86,33 @@
 
 
         <!-- Slider de fotos de la casa-->
-        <section class="carousel">
-            <div class="mida">
-                <div class="slider" id="slider">
-                    <img src="./images/DJI_0124.JPG" alt="Image 1">
-                    <img src="./images/DJI_0129.JPG" alt="Image 2">
-                    <img src="./images/DJI_0144.JPG" alt="Image 3">
-                    <img src="./images/DJI_0124.JPG" alt="Image 1">
-                    <img src="./images/DJI_0129.JPG" alt="Image 2">
-                    <img src="./images/DJI_0144.JPG" alt="Image 3">
-                    <img src="./images/DJI_0124.JPG" alt="Image 1">
-                    <img src="./images/DJI_0129.JPG" alt="Image 2">
-                    <img src="./images/DJI_0144.JPG" alt="Image 3">
+        <div class="swiper">
+            <div class="swiper swiper-hero">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./images/DJI_0185.JPG" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/DJI_0124.JPG" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/DJI_0155.JPG" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/DJI_0129.JPG" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/DJI_0177.JPG" alt="" />
+                    </div>
                 </div>
-            </div>
-            <button class="btn-left">&lt;</button>
-            <button class="btn-right">&gt;</button>
-        </section>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
 
         <!-- Tour 3d de la casa-->
         <section class="map-section">
@@ -119,16 +132,16 @@
         </div>
 
         <div class="footerTelefon">
-            <p>Casa Bertolina - Busa - Navés - Lleida - 25286</p>
-            <p>Mòbil: 661 66 89 60</p>
-            <p>info@labertolina.com</p>
+            <p> <a href="https://maps.app.goo.gl/zKm4PLV1nqV8RWYx8" style="text-decoration: none; color: white;">Casa
+                    Bertolina - Busa - Navés - Lleida - 25286</a></p>
+            <p> Mòbil: <a href="tel:+34661668960" style="text-decoration: none; color: white;">661 66 89 60</a></p>
+            <p><a href="./html/contacte.html" style="text-decoration: none; color: white;">info@labertolina.com</a></p>
         </div>
 
         <div class="footerBottom">
             <p> CopyRight &copy; 2024</p>
         </div>
     </footer>
-
 </body>
 
 </html>

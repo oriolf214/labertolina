@@ -188,6 +188,9 @@ body {
     .contenedor-imagenes .imagen {
         width: 48%;
     }
+    .overlay{
+        display: none;
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -198,6 +201,9 @@ body {
 
     #galeria-imagenes .contenedor-imagenes .imagen {
         width: 80%;
+    }
+    .overlay{
+        display: none;
     }
 }
 

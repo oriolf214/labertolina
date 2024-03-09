@@ -43,73 +43,73 @@
         max-width: 90%;
         margin-right: 0px;
     }
+    .swiper-hero{
+        max-width: 90%;
+    }
 }
 
-/*Galeria imatges responsive carruseles*/
-.carousel {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(to right, #859398, #333);
-    height: 100%; /* Agregado */
-
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 70%;
-    margin-left: 15%;
+.swiper{
+    background-color: rgb(50, 88, 50);
+    height: auto;
     
 }
+.swiper-hero {
+    width: 90%;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6%;
+}
 
-.slider img {
+.swiper-hero .swiper-slide {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.swiper-hero img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.btn-left,
-.btn-right {
-    display: flex;
+.swiper-hero .swiper-button-prev,
+.swiper-hero .swiper-button-next {
+    --swiper-navigation-size: 30px;
+    color: white;
+    height: 70px;
+    width: 50px;
+    margin-top: -35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
     position: absolute;
     top: 50%;
-    font-size: 3.5rem;
-    color: #ffffff81;
-    font-weight: 600;
     transform: translateY(-50%);
-    transition: .5s ease;
-    background: none;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
 }
 
-.btn-left:hover,
-.btn-right:hover {
-    background-color: #333333d4;
-    color: #fff;
+.swiper-hero .swiper-button-prev {
+    left: 0;
 }
 
-.btn-left {
-    left: 10%;
+.swiper-hero .swiper-button-next {
+    right: 0;
 }
 
-.btn-right {
-    right: 10%;
+.swiper-hero:hover .swiper-button-prev,
+.swiper-hero:hover .swiper-button-next {
+    opacity: 1;
 }
 
 @media (max-width: 1000px) {
-    .slider {
-        height: 75vh;
-        width: 100%;
-        margin-left: 0%;
-    }    
-    .btn-left,
-    .btn-right {
-        display: none;
+    .swiper-hero{
+        max-width: 90%;
     }
 }
+
+
+
 
 /*Estils pel mapa 3d*/
 .map-section {
@@ -125,3 +125,6 @@
     border-radius: 15px;
 }
 
+
+
+/*swiper*/
