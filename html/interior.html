@@ -23,12 +23,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
   <header>
-
     <div class="header">
       <div id="menu-icon" class="menu-icon"><i class="fas fa-bars" onclick="mostraMenu()"></i></div>
 
@@ -71,9 +69,11 @@
       <div class="section-content">
         <div class="column-container">
           <div class="column">
-            <p style="font-size: 23px;"><b>Capacitat de 13 persones amb un total de 193m2 </b><br> </p>
+            <p style="font-weight: bold; font-size: 1.4em; margin-bottom: -5px;"><b>Capacitat de 13 persones amb un
+                total de 193m2 </b><br> </p>
             <p>5 habitacions, 3 triples i 2 dobles.</p>
-            <p style="font-size: 18px;"> <b> La casa esta equipada amb: </b></p>
+            <p style="font-weight: bold; font-size: 1.30em; margin-bottom: -10px;"> <b> La casa esta equipada amb: </b>
+            </p>
             <ul>
               <li>Cuina completa</li>
               <li>4 banys amb assecador</li>
@@ -96,7 +96,7 @@
 
     <!-- Mapa 3d Casa -->
     <section class="map-section">
-      <h2>TOUR VIRTUAL</h2>
+      <!-- <h2>TOUR VIRTUAL</h2> -->
       <div class="matterport-map">
         <iframe src="https://my.matterport.com/show/?m=mNLjykomqKR" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -104,27 +104,27 @@
 
     <!-- Galeria dimagenes -->
     <div class="galery">
-      <h1 style="text-align: center;">Galeria d'Imatges</h1>
       <div id="linea"></div>
-
+      <h1 style="text-align: center;">Galeria d'Imatges</h1>
+      <!-- <div id="linea"></div> -->
 
       <!-- Miniaturas -->
       <div class="galeria-miniaturas">
-        <img src="../images/DJI_0124.JPG" alt="">
-        <img src="../images/DJI_0144.JPG" alt="">
-        <img src="../images/DJI_0177.JPG" alt="">
-        <img src="../images/DJI_0124.JPG" alt="">
-        <img src="../images/DJI_0144.JPG" alt="">
-        <img src="../images/DJI_0177.JPG" alt="">
-        <img src="../images/DJI_0124.JPG" alt="">
-        <img src="../images/DJI_0144.JPG" alt="">
-        <img src="../images/DJI_0177.JPG" alt="">
-        <img src="../images/DJI_0124.JPG" alt="">
-        <img src="../images/DJI_0144.JPG" alt="">
-        <img src="../images/DJI_0177.JPG" alt="">
-        <img src="../images/DJI_0124.JPG" alt="">
-        <img src="../images/DJI_0144.JPG" alt="">
-        <img src="../images/DJI_0177.JPG" alt="">
+        <img src="../images/interior/imatge1.jpg" alt="">
+        <img src="../images/interior/imatge2.jpg" alt="">
+        <img src="../images/interior/imatge3.jpg" alt="">
+        <img src="../images/interior/imatge4.jpg" alt="">
+        <img src="../images/interior/imatge5.jpg" alt="">
+        <img src="../images/interior/imatge6.jpg" alt="">
+        <img src="../images/interior/imatge7.jpg" alt="">
+        <img src="../images/interior/imatge8.jpg" alt="">
+        <img src="../images/interior/imatge9.jpg" alt="">
+        <img src="../images/interior/imatge13.jpg" alt="">
+        <img src="../images/interior/imatge14.jpg" alt="">
+        <img src="../images/interior/imatge15.jpg" alt="">
+        <img src="../images/interior/imatge11.jpg" alt="">
+        <img src="../images/interior/imatge10.jpg" alt="">
+        <img src="../images/interior/imatge12.jpg" alt="">
       </div>
 
       <!-- Imagen en grande -->
@@ -138,73 +138,7 @@
           <div class="swiper-button-next" id="next"></div>
         </div>
       </div>
-
-
-      <script>
-        // Crear el contenedor del Swiper para la vista en grande
-        var swiperImagenGrande = new Swiper('.swiper-container-imagen-grande', {
-          loop: true,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          }
-        });
-
-        // Guardar el estado del zoom
-        var zoomActivo = false;
-
-        // Evento para mostrar la imagen en grande al hacer clic en una miniatura
-        document.querySelectorAll('.galeria-miniaturas img').forEach((img, index) => {
-          img.addEventListener('click', function () {
-            document.querySelector('.imagen-grande').style.display = 'flex';
-
-            // Eliminar todas las diapositivas clonadas antes de agregar nuevas
-            swiperImagenGrande.removeAllSlides();
-
-            // Agregar las imágenes a la vista en grande
-            document.querySelectorAll('.galeria-miniaturas img').forEach((img, idx) => {
-              const clone = img.cloneNode(true);
-              const slide = document.createElement('div');
-              slide.classList.add('swiper-slide', 'swiper-slide-imagen-grande');
-              slide.appendChild(clone);
-              swiperImagenGrande.appendSlide(slide);
-
-              // Establecer la diapositiva inicial si coincide con la imagen clicada
-              if (idx === index) {
-                swiperImagenGrande.slideTo(swiperImagenGrande.slides.length - 1, 0);
-              }
-
-              // Agregar el evento de clic para hacer zoom in/out en la imagen
-              clone.addEventListener('click', function () {
-                if (!zoomActivo) {
-                  clone.style.transformOrigin = '50% 50%'; // Establecer el punto de origen de la transformación
-                  clone.style.transform = 'scale(2)';
-                  zoomActivo = true;
-                  swiperImagenGrande.allowSlideNext = false;
-                  swiperImagenGrande.allowSlidePrev = false;
-                } else {
-                  clone.style.transformOrigin = '50% 50%'; // Establecer el punto de origen de la transformación
-                  clone.style.transform = 'scale(1)';
-                  zoomActivo = false;
-                  swiperImagenGrande.allowSlideNext = true;
-                  swiperImagenGrande.allowSlidePrev = true;
-                }
-              });
-
-            });
-          });
-        });
-
-        // Evento para cerrar la imagen en grande al hacer clic en el botón de cerrar
-        document.querySelector('.cerrado').addEventListener('click', function () {
-          document.querySelector('.imagen-grande').style.display = 'none';
-          swiperImagenGrande.removeAllSlides(); // Eliminar todas las diapositivas clonadas al cerrar la vista en grande
-        });
-      </script>
     </div>
-
-
-
   </main>
 
 
@@ -228,5 +162,4 @@
   </footer>
 
 </body>
-
 </html>

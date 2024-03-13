@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, ;
 }
 
 .titolytexto {
-    padding: 50px 10%;
+    padding: 20px 10%;
 }
 
 .titolytexto h2 {
@@ -42,18 +42,23 @@ body {
     border-radius: 3%;
 }
 
-.columna:hover{
+.titolytexto {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.columna:hover {
     background: #343759;
     color: #f1f1f2;
-    transition: .5s all;
-    transform: scale(1.1);
-    
+    transition: .2s all;
+    transform: scale(1.05);
+
 }
 
 /* Estilos para el enlace "Contacte" */
 .preus .columna a {
     display: inline-block;
-    background-color: green;
+    background-color: gray;
     border-radius: 15px;
     padding: 10px 20px;
     text-decoration: none;
@@ -61,23 +66,28 @@ body {
 }
 
 /* Estilos para los botones "Contacte" */
-.preus .tabla a {
+.tabla a {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 680px) {
-  .tabla {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-  }
-
-  .columna {
-    width: 80%;
-    margin-bottom: 20px;
-    margin-left: auto; /* Centra la columna horizontalmente */
-    margin-right: auto; /* Centra la columna horizontalmente */
-  }
+.tabla {
+    font-size: 1.2em;
 }
 
-  
+@media screen and (max-width: 680px) {
+    .tabla {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+    }
+
+    .columna {
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: auto;
+        /* Centra la columna horizontalmente */
+        margin-right: auto;
+        /* Centra la columna horizontalmente */
+    }
+}

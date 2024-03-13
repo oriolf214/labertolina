@@ -1,6 +1,9 @@
 /*Video Presentacion de la casa*/
-.video-section,
-.video-container video {
+body {
+    background-color: #f8f8f8;
+}
+
+.video-section, .video-container video {
     width: 100%;
     height: 92vh;
     object-fit: cover;
@@ -9,7 +12,6 @@
 /*Text Presentacio Casa*/
 .presentation-section {
     /*height: 50vh;*/
-    background-color: #f8f8f8;
     padding: 50px 20px;
     display: flex;
     align-items: center;
@@ -26,7 +28,11 @@
 .presentation-content img {
     max-width: 50%;
     border-radius: 5px;
-    margin-right: 20px;
+    margin-right: 100px;
+}
+
+.presentation-text {
+    width: 35%;
 }
 
 .presentation-text h2 {
@@ -36,30 +42,39 @@
 }
 
 @media (max-width: 1000px) {
-    .presentation-content{
+    .presentation-section {
+        padding-bottom: 20px;
+    }
+
+    .presentation-content {
         flex-direction: column;
     }
-    .presentation-content img{
-        max-width: 90%;
+
+    .presentation-content img {
+        max-width: 100%;
         margin-right: 0px;
     }
-    .swiper-hero{
+
+    .presentation-text {
+        width: 90%;
+    }
+
+    .swiper-hero {
         max-width: 90%;
     }
 }
 
-.swiper{
-    background-color: rgb(50, 88, 50);
+.swiper {
     height: auto;
-    
 }
+
 .swiper-hero {
     width: 90%;
-    max-width: 70%;
+    max-width: 90%;
     margin: auto;
     overflow: hidden;
     position: relative;
-    border-radius: 6%;
+    border-radius: 4%;
 }
 
 .swiper-hero .swiper-slide {
@@ -74,8 +89,7 @@
     object-fit: cover;
 }
 
-.swiper-hero .swiper-button-prev,
-.swiper-hero .swiper-button-next {
+.swiper-hero .swiper-button-prev, .swiper-hero .swiper-button-next {
     --swiper-navigation-size: 30px;
     color: white;
     height: 70px;
@@ -97,13 +111,12 @@
     right: 0;
 }
 
-.swiper-hero:hover .swiper-button-prev,
-.swiper-hero:hover .swiper-button-next {
+.swiper-hero:hover .swiper-button-prev, .swiper-hero:hover .swiper-button-next {
     opacity: 1;
 }
 
 @media (max-width: 1000px) {
-    .swiper-hero{
+    .swiper-hero {
         max-width: 90%;
     }
 }

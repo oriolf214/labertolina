@@ -7,9 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="../css/style_header.css">
+
+    <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
     <link rel="stylesheet" href="../css/style_casa.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <script src="../js/functions.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <link rel="icon" href="../images/logo-curt.png">
     <title>La Bertolina - Allotjament Rural</title>
@@ -18,12 +23,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
     <header>
-
         <div class="header">
             <div id="menu-icon" class="menu-icon"><i class="fas fa-bars" onclick="mostraMenu()"></i></div>
 
@@ -56,62 +59,52 @@
 
 
     <main>
-        <section class="text-inici">
-            <div class="presentation-content">
-                    <h2>Historia</h2>
-                    <p style="text-align: justify;">El pla de Busa té una forta personalitat històrica, ja que gràcies a les seves característiques
-                        naturals va ser utilitzat com a fortificació durant la Guerra de la Independència (o del
-                        Francès), 1808-1814. El General Lacy la va utilitzar de campament militar amb més de 8.000
-                        soldats per intentar lluitar contra les tropes napoleòniques que havien entrat a Catalunya. Busa
-                        va ser el primer lloc d Espanya (després de Cadis) a proclamar la Constitució de Cadis (PEPA) el
-                        19 de març de 1812.
-                        Un dels punts més emblemàtics del pla de Busa és l’anomenat Capolatell, “la Presó”. És una mola
-                        separada de la resta de la serra de Busa, a la qual sols es pot accedir per una palanca, que fou
-                        emprada com a presó militar durant la Guerra del Francès. La llegenda afirma que els soldats
-                        francesos, desesperats, es llançaven al buit al crit de Mourir à Busa et resurgir à Paris (morir
-                        a Busa i ressorgir a París).
-                        Segons textos antics, als boscos de la Bertolina s’hi va instal·lar els camps de reclutament i
-                        l’escola de cadets.
-                    </p>
+        <section>
+            <div>
+                <h1 style="text-align: center; font-size: 2rem; padding-top: 20px;">HISTÒRIA</h1>
+                <p style="text-align: center; padding: 15px 8.5%; font-size: 1.2em;">El pla de Busa té una forta
+                    personalitat històrica, ja que gràcies a les seves característiques
+                    naturals va ser utilitzat com a fortificació durant la Guerra de la Independència (o del
+                    Francès), 1808-1814. El General Lacy la va utilitzar de campament militar amb més de 8.000
+                    soldats per intentar lluitar contra les tropes napoleòniques que havien entrat a Catalunya. <br>Busa
+                    va ser el primer lloc d'Espanya (després de Cadis) a proclamar la Constitució de Cadis (PEPA) el
+                    19 de març de 1812.<br><br>
+                    Un dels punts més emblemàtics del pla de Busa és l’anomenat Capolatell, “la Presó”. És una mola
+                    separada de la resta de la serra de Busa, a la qual sols es pot accedir per una palanca, que fou
+                    emprada com a presó militar durant la Guerra del Francès. La llegenda afirma que els soldats
+                    francesos, desesperats, es llançaven al buit al crit de Mourir à Busa <br> et resurgir à Paris
+                    (morir a Busa i ressorgir a París).
+                    Segons textos antics, als boscos de la Bertolina s’hi va instal·lar els camps de reclutament i
+                    l’escola de cadets.
+                </p>
             </div>
         </section>
 
 
         <!-- Galeria dimagenes -->
-        <section id="galeria-imagenes" class="galeria-imagenes">
-            <div class="galeria">
-                <div class="contenedor-imagenes">
-                    <div class="imagen">
-                        <img src="../images/historia/escala.jpg" alt="" data-titulo="1234">
-                        <div class="overlay">
-                            <h2>Habitacio 1</h2>
-                        </div>
+        <div class="galery">
+            <!-- <div id="linea"></div> -->
+            <!-- <h1 style="text-align: center;">Galeria d'Imatges</h1> -->
+
+            <!-- Miniaturas -->
+            <div class="galeria-miniaturas">
+                <img src="../images/historia/escala.jpg" alt="">
+                <img src="../images/historia/guifre.jpg" alt="">
+                <img src="../images/historia/plana_busa.jpg" alt="">
+            </div>
+
+            <!-- Imagen en grande -->
+            <div class="imagen-grande">
+                <span class="cerrado">&times;</span>
+                <div class="swiper-container swiper-container-imagen-grande">
+                    <div class="swiper-wrapper">
+                        <!-- Las imágenes se añadirán aquí dinámicamente -->
                     </div>
-                    <div class="imagen">
-                        <img src="../images/historia/guifre.jpg" alt="" data-titulo="1234">
-                        <div class="overlay">
-                            <h2>Habitacio 2</h2>
-                        </div>
-                    </div>
-                    <div class="imagen">
-                        <img src="../images/historia/plana_busa.jpg" alt="" data-titulo="1234">
-                        <div class="overlay">
-                            <h2>Habitacio 3</h2>
-                        </div>
-                    </div>
+                    <div class="swiper-button-prev" id="prev"></div>
+                    <div class="swiper-button-next" id="next"></div>
                 </div>
             </div>
-
-            <!-- Modal para mostrar la imagen ampliada -->
-            <div class="modal" id="modal">
-                <span class="cerrar" id="cerrar">&times;</span>
-                <a class="navegacion anterior" id="anterior">&#10094;</a>
-                <a class="navegacion siguiente" id="siguiente">&#10095;</a>
-                <img class="imagen-modal" id="imagen-modal" src="" alt="">
-                <div class="titulo-modal" id="titulo-modal"></div>
-            </div>
-        </section>
-
+        </div>
     </main>
 
 
@@ -133,7 +126,5 @@
             <p> CopyRight &copy; 2024</p>
         </div>
     </footer>
-
 </body>
-
 </html>
