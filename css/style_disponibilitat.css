@@ -4,15 +4,5 @@ body {
     padding: 0;
 }
 
-.map-section {
-    padding-top: 5%;
-    padding-left: 10%;
-    height: 70vh;
-}
 
-.map-section iframe {
-    /*margin-bottom: 2rem;*/
-    height: 80vh;
-    width: 100%;
 
-}

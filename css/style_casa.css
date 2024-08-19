@@ -8,7 +8,7 @@ body {
 /*Video */
 .video-section, .video-container video {
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -449,29 +449,31 @@ body {
 
 /***** ESTILS  PART EXTERIOR CASA ******/
 .text-inici {
-    padding-top: 30px;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 30px;
+    padding-top: 70px;
     text-align: center;
 }
 
 .text-inici h2 {
-    padding-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .text-inici p {
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
+    padding: 15px 8.5%; 
+    font-size: 1.2em;
 }
 
 
 
 /***** ESTILS ENTORN CASA ******/
+
 .presentation-section {
     background-color: #f8f8f8;
-    padding: 0px 10%;
+    padding: 50px 10% 0;
     display: flex;
     align-items: center;
 }
