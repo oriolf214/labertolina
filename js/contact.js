@@ -19,9 +19,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   emailjs.send('service_bertolina', 'template_bertolina', formData)
     .then(function(response) {
       console.log('Correo enviado con éxito!', response.status, response.text);
-      alert('¡Mensaje enviado con éxito!');
     }, function(error) {
       console.error('Error al enviar el correo:', error);
-      alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.');
     });
+
+  // Limpiar el formulario
+  document.getElementById('contact-form').reset();
 });
