@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//Funcions galeria 
+//Funcions galeria
 document.addEventListener('DOMContentLoaded', function () {
   const imagenes = document.querySelectorAll('.imagen img');
   const modal = document.getElementById('modal');
@@ -113,9 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
     imagenModal.classList.toggle('zoomed');
   });
 });
-
-
-
 
 ///Galeria imatges nova
 document.addEventListener('DOMContentLoaded', function () {
