@@ -11,6 +11,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   // Obtener los datos del formulario
   const formData = {
     name: document.getElementById('name').value,
+    telephone: document.getElementById('telephone').value,
     email: document.getElementById('email').value,
     message: document.getElementById('comments').value
   };
