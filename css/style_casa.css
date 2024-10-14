@@ -1,8 +1,8 @@
 /*****      ESTILS PAGINA INTERIOR     ********/
 body {
-    margin: 0;
-    padding: 0;
     background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 /*Video */
@@ -37,7 +37,7 @@ body {
     box-sizing: border-box;
     margin-top: 25px;
     padding-bottom: 0px;
-    font-size: 1.3em;
+    font-size: 16px;
 }
 
 .column ul {
@@ -54,6 +54,10 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.rooms {
+    padding: 50px 0;
 }
 
 /* Estilos para pantallas más pequeñas */
@@ -463,7 +467,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
-    padding: 15px 8.5%; 
+    padding: 15px 8.5%;
     font-size: 1.2em;
 }
 
