@@ -14,12 +14,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <link rel="icon" href="./images/logo-curt.png">
+    <!-- Carga anticipada del video -->
+    <link rel="preload" href="./images/intro-960 - FlexClip.mp4" as="video" type="video/mp4">
+
     <title>La Bertolina - Allotjament Rural</title>
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -134,5 +133,21 @@
             <p> Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.querySelector('.video-container video');
+
+            // Asegúrate de que el video esté silenciado
+            video.muted = true;
+            video.autoplay = true;
+            video.playsInline = true;
+
+            // Intenta reproducir el video manualmente con JavaScript
+            video.play().catch(function (error) {
+                // Si el autoplay falla, agregar controles manuales
+                video.controls = true;
+            });
+        });
+    </script>
 </body>
 </html>
