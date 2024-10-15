@@ -160,6 +160,21 @@
       <p> Copyright &copy; 2024</p>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.querySelector('.video-container video');
 
+      // Asegúrate de que el video esté silenciado
+      video.muted = true;
+      video.autoplay = true;
+      video.playsInline = true;
+
+      // Intenta reproducir el video manualmente con JavaScript
+      video.play().catch(function (error) {
+        // Si el autoplay falla, agregar controles manuales
+        video.controls = true;
+      });
+    });
+  </script>
 </body>
 </html>
