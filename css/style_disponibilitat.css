@@ -7,3 +7,19 @@ body {
         display: none !important;
     }
 }
+
+main {
+    padding: 70px 70px 70px 70px;
+}
+
+@media (max-width: 1000px) {
+    main {
+        padding: 70px 40px 70px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 70px 20px 70px 20px;
+    }
+}
