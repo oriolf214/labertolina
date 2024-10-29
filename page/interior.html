@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="../css/style_header.css">
 
+  <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
   <link rel="stylesheet" href="../css/style_casa.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -56,59 +57,74 @@
   </header>
 
   <main>
-    <section class="presentation-section">
-      <div class="presentation-content">
-        <div class="presentation-text">
-          <h1 style="text-align: center; font-size: 2rem; padding-top: 20px;">ENTORN</h1>
-          <p> La Bertolina està situada a 1.350 m d’altitud a l’extrem oriental del pla de Busa, una illa natural de 4km
-            de longitud per 2 km d’ample, encerclat per uns majestuosos singles als peus del Prepirineu, a l’interior de
-            la zona d’Espai d’Interès Natural (PEIN) de Busa-Bastets-Lord. El seu punt més alt és el Cogul a 1.526 m
-            sobre el nivell del mar. Un lloc privilegiat per les seves vistes.
-          </p>
+    <!-- Video presentacio de la casa -->
+    <section class="video-section">
+      <div class="video-container">
+        <video src="../images/interior/interior_baix.mp4" autoplay loop muted></video>
+      </div>
+    </section>
 
-          <p>És un indret recomanat per als amants de la tranquil·litat que tinguin ganes de gaudir de la natura i de
-            l’excursionisme.</p>
+    <!-- Sección de Distribució de la Casa -->
+    <section class="main-section">
+      <div class="section-content">
+        <div class="column-container">
+          <div class="column rooms">
+            <p style="font-weight: bold; font-size: 1.4em; margin-bottom: -5px;"><b>Capacitat de 13 persones amb un
+                total de 193m2 </b><br> </p>
+            <p>5 habitacions, 3 triples i 2 dobles.</p>
+            <p style="font-weight: bold; font-size: 1.30em; margin-bottom: -10px;"> <b> La casa esta equipada amb: </b>
+            </p>
+            <ul>
+              <li>Cuina completa</li>
+              <li>4 banys amb assecador</li>
+              <li>Sala d'estar amb llar de foc</li>
+              <li>Menjador</li>
+              <li>Rentavaixelles</li>
+              <li>Rentadora</li>
+              <li>Calefacció central</li>
+              <li>Wi-Fi</li>
+            </ul>
+          </div>
 
-          <p>Són múltiples les activitats que es poden fer en aquest entorn: </p>
-        </div>
-
-        <div class="llista">
-          <ul>
-            <li>Excursions a peu a l’interior del pla de Busa, com ara la visita a la Presó o Capolatell</li>
-            <li>Descens dels singles a través de les canals que antigament eren l’únic pas d’accés al pla. </li>
-            <li>Visita, després d’una caminada, a l’església romànica de Sant Pere de Graudescales del s. XII.</li>
-            <li>Ecomuseu, molí de Ca l’Ambròs i serradora.</li>
-            <li>Monument de Guifré el Pelós (llegenda de les quatre barres).</li>
-            <li>Santuari de Lord.</li>
-            <li>Pantà de la Llosa del Cavall (piragüisme).</li>
-          </ul>
+          <div class="column image-column">
+            <img src="../images/plano_sin_fondo.png" alt="Imagen">
+          </div>
         </div>
       </div>
     </section>
 
 
+    <!-- Mapa 3d Casa -->
+    <section class="map-section">
+      <!-- <h2>TOUR VIRTUAL</h2> -->
+      <div class="matterport-map">
+        <iframe src="https://my.matterport.com/show/?m=mNLjykomqKR" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
     <!-- Galeria dimagenes -->
     <div class="galery">
-      <!-- <h1 style="text-align: center;">Galeria d'Imatges</h1>
-      <div id="linea"></div> -->
+      <div id="linea"></div>
+      <h1 style="text-align: center;">Galeria d'Imatges</h1>
+      <!-- <div id="linea"></div> -->
 
       <!-- Miniaturas -->
       <div class="galeria-miniaturas">
-        <img src="../images/entorn/imatge1.jpg" alt="">
-        <img src="../images/entorn/imatge2.jpg" alt="">
-        <img src="../images/entorn/imatge3.jpg" alt="">
-        <img src="../images/entorn/imatge4.jpg" alt="">
-        <img src="../images/entorn/imatge5.jpg" alt="">
-        <img src="../images/entorn/imatge6.jpg" alt="">
-        <img src="../images/entorn/imatge7.jpg" alt="">
-        <img src="../images/entorn/imatge8.jpg" alt="">
-        <img src="../images/entorn/imatge9.jpg" alt="">
-        <img src="../images/entorn/imatge10.jpg" alt="">
-        <img src="../images/entorn/imatge11.jpg" alt="">
-        <img src="../images/entorn/imatge12.jpg" alt="">
-        <img src="../images/entorn/imatge13.jpg" alt="">
-        <img src="../images/entorn/DJI_0185.JPG" alt="">
-        <img src="../images/entorn/DJI_0177.JPG" alt="">
+        <img src="../images/interior/imatge1.jpg" alt="">
+        <img src="../images/interior/imatge2.jpg" alt="">
+        <img src="../images/interior/imatge3.jpg" alt="">
+        <img src="../images/interior/imatge4.jpg" alt="">
+        <img src="../images/interior/imatge5.jpg" alt="">
+        <img src="../images/interior/imatge6.jpg" alt="">
+        <img src="../images/interior/imatge7.jpg" alt="">
+        <img src="../images/interior/imatge8.jpg" alt="">
+        <img src="../images/interior/imatge9.jpg" alt="">
+        <img src="../images/interior/imatge13.jpg" alt="">
+        <img src="../images/interior/imatge14.jpg" alt="">
+        <img src="../images/interior/imatge15.jpg" alt="">
+        <img src="../images/interior/imatge11.jpg" alt="">
+        <img src="../images/interior/imatge10.jpg" alt="">
+        <img src="../images/interior/imatge12.jpg" alt="">
       </div>
 
       <!-- Imagen en grande -->
@@ -135,16 +151,31 @@
     </div>
 
     <div class="footerTelefon">
-      <p> <a href="https://maps.app.goo.gl/zKm4PLV1nqV8RWYx8" style="text-decoration: none; color: white;">Casa
+      <p> <a href="https://maps.app.goo.gl/zKm4PLV1nqV8RWYx8" target=”_blank” style="text-decoration: none; color: white;">Casa
               Bertolina - Busa - Navés - Lleida - 25286</a></p>
       <p> Mòbil: <a href="tel:+34661668960" style="text-decoration: none; color: white;">661 66 89 60</a></p>
-      <p><a href="./html/contacte.html" style="text-decoration: none; color: white;">info@labertolina.com</a></p>
-  </div>
+      <p><a href="./page/contacte.html" style="text-decoration: none; color: white;">info@labertolina.com</a></p>
+    </div>
 
     <div class="footerBottom">
       <p> Copyright &copy; 2024</p>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.querySelector('.video-container video');
 
+      // Asegúrate de que el video esté silenciado
+      video.muted = true;
+      video.autoplay = true;
+      video.playsInline = true;
+
+      // Intenta reproducir el video manualmente con JavaScript
+      video.play().catch(function (error) {
+        // Si el autoplay falla, agregar controles manuales
+        video.controls = true;
+      });
+    });
+  </script>
 </body>
 </html>
