@@ -16,8 +16,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*min-height: 100vh;*/
   padding: 110px 0px 50px;
+
+  :focus {
+    outline: 1px solid #1E92E9;
+  }
 }
 
 
@@ -68,10 +71,6 @@ textarea {
   border-radius: 10px;
 }
 
-:focus {
-  outline: 1px solid #1E92E9;
-}
-
 .btn {
   background-color: #333646;
   width: 150px;
@@ -105,7 +104,7 @@ textarea {
 
 @media(max-width:991px) {
   .formulari {
-    padding: 30px;
+    padding: 50px 0;
   }
 
   .form-content {
