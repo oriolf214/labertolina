@@ -1,6 +1,6 @@
 // Inicializa EmailJS con tu User ID
 (function() {
-  emailjs.init('23oWOPfOP3YlBeQOJ');  // Reemplaza 'YOUR_USER_ID' con tu User ID de EmailJS
+  emailjs.init('K0hCG9Uwo5RCeKAyX');  // Reemplaza 'YOUR_USER_ID' con tu User ID de EmailJS
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -17,7 +17,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   };
 
   // Enviar el correo a través de EmailJS
-  emailjs.send('service_bertolina', 'template_bertolina', formData)
+  emailjs.send('service_la_bertolina', 'la_bertolina_template', formData)
     .then(function(response) {
       console.log('Correo enviado con éxito!', response.status, response.text);
     }, function(error) {
