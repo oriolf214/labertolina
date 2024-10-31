@@ -124,9 +124,6 @@ body {
     }
 }
 
-
-
-
 /*Estils pel mapa 3d*/
 .map-section {
     text-align: center;
@@ -140,7 +137,3 @@ body {
     height: 75vh;
     border-radius: 15px;
 }
-
-
-
-/*swiper*/

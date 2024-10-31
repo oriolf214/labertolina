@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //Funcions galeria
+/*
 document.addEventListener('DOMContentLoaded', function () {
   const imagenes = document.querySelectorAll('.imagen img');
   const modal = document.getElementById('modal');
@@ -112,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
   imagenModal.addEventListener('dblclick', function () {
     imagenModal.classList.toggle('zoomed');
   });
-});
+});*/
 
 ///Galeria imatges nova
 document.addEventListener('DOMContentLoaded', function () {
@@ -125,15 +126,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Guardar el estado del zoom
   var zoomActivo = false;
 
   // Evento para mostrar la imagen en grande al hacer clic en una miniatura
   document.querySelectorAll('.galeria-miniaturas img').forEach((img, index) => {
     img.addEventListener('click', function () {
       document.querySelector('.imagen-grande').style.display = 'flex';
-
-      // Eliminar todas las diapositivas clonadas antes de agregar nuevas
       swiperImagenGrande.removeAllSlides();
 
       // Agregar las imágenes a la vista en grande
@@ -152,13 +150,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // Agregar el evento de clic para hacer zoom in/out en la imagen
         clone.addEventListener('click', function () {
           if (!zoomActivo) {
-            clone.style.transformOrigin = '50% 50%'; // Establecer el punto de origen de la transformación
+            clone.style.transformOrigin = '50% 50%';
             clone.style.transform = 'scale(2)';
             zoomActivo = true;
             swiperImagenGrande.allowSlideNext = false;
             swiperImagenGrande.allowSlidePrev = false;
           } else {
-            clone.style.transformOrigin = '50% 50%'; // Establecer el punto de origen de la transformación
+            clone.style.transformOrigin = '50% 50%';
             clone.style.transform = 'scale(1)';
             zoomActivo = false;
             swiperImagenGrande.allowSlideNext = true;
@@ -173,6 +171,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Evento para cerrar la imagen en grande al hacer clic en el botón de cerrar
   document.querySelector('.cerrado').addEventListener('click', function () {
     document.querySelector('.imagen-grande').style.display = 'none';
-    swiperImagenGrande.removeAllSlides(); // Eliminar todas las diapositivas clonadas al cerrar la vista en grande
+    swiperImagenGrande.removeAllSlides();
   });
 });
