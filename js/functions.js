@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     direction: "horizontal",
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 2500,
       disableOnInteraction: false,
     },
     pagination: {
