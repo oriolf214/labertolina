@@ -6,6 +6,14 @@ body {
     #zhcal-root div.zhcal_banner {
         display: none !important;
     }
+
+    #zhcal-root td.zhcal_month, #zhcal-root tr.zhcal_month_days td {
+        border-top: 1px black solid !important;
+        border-bottom: 1px black solid !important;
+        color: black !important;
+        text-shadow: none !important;
+        background-image: none !important;
+    }
 }
 
 main {
